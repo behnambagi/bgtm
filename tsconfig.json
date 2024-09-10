@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // or any other target you prefer
+    "module": "commonjs", // for Node.js modules
+    "outDir": "dist", // Output directory for compiled JavaScript files
+    "strict": true, // Enable strict type checking
+    "esModuleInterop": true
+    // Enable interoperability with CommonJS modules
+  }
+}

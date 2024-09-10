@@ -1,16 +1,30 @@
 {
   "name": "my-git-tagger",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node index.js"
+  "description": "A command-line tool for tagging and pushing Git commits with version increment and pipeline URL generation.",
+  "main": "src/index.ts",
+  "bin": {
+    "my-git-tagger": "dist/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "dev": "npm run build && node dist/index.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "git",
+    "tag",
+    "pipeline",
+    "versioning"
+  ],
+  "author": "Your Name",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "inquirer": "^10.2.2",
     "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.6.2"
   }
 }
