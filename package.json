@@ -1,0 +1,16 @@
+{
+  "name": "my-git-tagger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "inquirer": "^10.2.2",
+    "yargs": "^17.7.2"
+  }
+}
