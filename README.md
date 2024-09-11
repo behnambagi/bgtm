@@ -1,4 +1,4 @@
-## 🚀 Git Tagging Made Easy with `bg-tag` 🏷️
+## 🚀 Git Tagging Made Easy with `bgtag` 🏷️
 
 This handy script streamlines the process of creating and managing Git tags, making your version control workflow a breeze! 🌬️
 
@@ -10,13 +10,13 @@ This handy script streamlines the process of creating and managing Git tags, mak
    **Install the package globally for easy access from anywhere in your system:**
 
    ```bash
-   npm install -g bg-tag
+   npm install -g bgtag
    ```
 
    or, if you use yarn:
 
    ```bash
-   yarn global add bg-tag
+   yarn global add bgtag
    ```
 
 ## How to Use 🛠️
@@ -24,7 +24,7 @@ This handy script streamlines the process of creating and managing Git tags, mak
 Just run:
 
 ```bash
-npx bg-tag [--handly]
+npx bgtag [--handly]
 ```
 
 - Add `--handly` if you want to type the new version yourself. Otherwise, we'll generate it for you! ✨
@@ -45,13 +45,13 @@ npx bg-tag [--handly]
 **Manual version:**
 
 ```bash
-npx bg-tag --handly
+npx bgtag --handly
 ```
 
 **Automatic version:**
 
 ```bash
-npx bg-tag
+npx bgtag
 ```
 
 **Important:** Make sure you're in a Git repository!

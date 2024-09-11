@@ -1,10 +1,10 @@
 {
-  "name": "bg-tag",
-  "version": "1.0.0",
+  "name": "bgtag",
+  "version": "0.0.1",
   "description": "A command-line tool for tagging and pushing Git commits with version increment and pipeline URL generation.",
   "main": "src/index.ts",
   "bin": {
-    "bg-tag": "dist/cli.js"
+    "bgtag": "dist/cli.js"
   },
   "scripts": {
     "dev": "npm run build && node dist/index.js",
@@ -13,7 +13,7 @@
     "compile": "tsc --outDir production/dist",
     "copy-files": "npm run create-production-dir && npm run generate-production-package-json && npm run copy-readme && npm run copy-cli",
     "create-production-dir": "mkdirp production",
-    "generate-production-package-json": "node -p \"let pkg = require('./package.json'); delete pkg.scripts; delete pkg.main; delete pkg.devDependencies; pkg.bin['bg-tag'] = 'cli.js'; JSON.stringify(pkg, null, 2)\" > production/package.json",
+    "generate-production-package-json": "node -p \"let pkg = require('./package.json'); delete pkg.scripts; delete pkg.main; delete pkg.devDependencies; pkg.bin['bgtag'] = 'cli.js'; JSON.stringify(pkg, null, 2)\" > production/package.json",
     "copy-readme": "cp README.md production",
     "copy-cli": "cp cli.js production"
   },

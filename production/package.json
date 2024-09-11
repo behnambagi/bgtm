@@ -1,9 +1,9 @@
 {
-  "name": "bg-tag",
-  "version": "1.0.0",
+  "name": "bgtag",
+  "version": "0.0.1",
   "description": "A command-line tool for tagging and pushing Git commits with version increment and pipeline URL generation.",
   "bin": {
-    "bg-tag": "cli.js"
+    "bgtag": "cli.js"
   },
   "keywords": [
     "git",
