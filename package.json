@@ -1,6 +1,6 @@
 {
   "name": "bgtag",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A command-line tool for tagging and pushing Git commits with version increment and pipeline URL generation.",
   "main": "src/index.ts",
   "bin": {
