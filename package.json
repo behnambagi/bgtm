@@ -1,14 +1,21 @@
 {
-  "name": "my-git-tagger",
+  "name": "bg-tag",
   "version": "1.0.0",
   "description": "A command-line tool for tagging and pushing Git commits with version increment and pipeline URL generation.",
   "main": "src/index.ts",
   "bin": {
-    "my-git-tagger": "dist/index.js"
+    "bg-tag": "dist/cli.js"
   },
   "scripts": {
     "dev": "npm run build && node dist/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "build:prod": "npm run compile && npm run copy-files",
+    "compile": "tsc --outDir production/dist",
+    "copy-files": "npm run create-production-dir && npm run generate-production-package-json && npm run copy-readme && npm run copy-cli",
+    "create-production-dir": "mkdirp production",
+    "generate-production-package-json": "node -p \"let pkg = require('./package.json'); delete pkg.scripts; delete pkg.main; delete pkg.devDependencies; pkg.bin['bg-tag'] = 'cli.js'; JSON.stringify(pkg, null, 2)\" > production/package.json",
+    "copy-readme": "cp README.md production",
+    "copy-cli": "cp cli.js production"
   },
   "keywords": [
     "git",
@@ -25,6 +32,13 @@
   "devDependencies": {
     "@types/node": "^22.5.4",
     "@types/yargs": "^17.0.33",
-    "typescript": "^5.6.2"
+    "async": "^3.2.6",
+    "colors": "^1.4.0",
+    "commander": "^12.1.0",
+    "jq": "^1.7.2",
+    "mkdirp": "^3.0.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2",
+    "winston": "^3.14.2"
   }
 }
