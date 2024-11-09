@@ -24,7 +24,7 @@ This handy script streamlines the process of creating and managing Git tags, mak
 Just run:
 
 ```bash
-npx bgtag [--handly]
+bgtag
 ```
 
 - Add `--handly` if you want to type the new version yourself. Otherwise, we'll generate it for you! ✨
@@ -45,13 +45,13 @@ npx bgtag [--handly]
 **Manual version:**
 
 ```bash
-npx bgtag --handly
+bgtag --handly
 ```
 
 **Automatic version:**
 
 ```bash
-npx bgtag
+bgtag
 ```
 
 **Important:** Make sure you're in a Git repository!
