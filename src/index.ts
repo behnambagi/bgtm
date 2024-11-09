@@ -1,5 +1,5 @@
-import { updateProject } from './commands/update';
-import { tagProject } from './commands/tag';
+import { updateProject } from './commands/update.js';
+import { tagProject } from './commands/tag.js';
 
 updateProject()
     .then(() => {

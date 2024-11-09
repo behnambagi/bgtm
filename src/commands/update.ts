@@ -1,4 +1,4 @@
-import { execAsync } from '../utils/exec';
+import { execAsync } from '../utils/exec.js';
 
 export async function updateProject(): Promise<void> {
     try {
